@@ -22,7 +22,7 @@ export const initialState: GlobalState = {
     isLoadingMoreAnimes: false,
     animeFilters: {
       page: 1,
-      limit: 5
+      limit: 10
     },
   },
   data: {
