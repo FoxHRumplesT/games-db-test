@@ -1,0 +1,29 @@
+.animeList
+  gap: 16px
+  margin: auto
+  display: flex
+  flex-wrap: wrap
+  .animeCard
+    width: 248px
+    padding: 10px
+    cursor: pointer
+    border-radius: 10px
+    box-sizing: border-box
+    background-color: var(--white)
+    border: 1px solid var(--black)
+    .img
+      width: 100%
+      object-fit: cover
+      margin: 0 0 6px 0
+      border-radius: 10px
+      aspect-ratio: 1 / 1
+    .info
+      display: flex
+      flex-wrap: wrap
+      .name
+        width: 100%
+      .type
+        width: 50%
+      .score
+        width: 50%
+        text-align: right

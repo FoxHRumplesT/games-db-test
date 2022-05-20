@@ -1,0 +1,25 @@
+$gameCardWidth: 248px
+$gridGap: 16px
+$contentPadding: 24px
+
+.wrapper
+  .content
+    margin: auto
+    padding: 24px 0
+    .footer
+      width: 100%
+      display: flex
+      column-gap: 10px
+      margin: 10px 0 40px 0
+      .button
+        width: 100%
+        border: none
+        background-color: var(--primary)
+      .limitSelector
+        width: 100px
+
+@for $i from 1 through 6
+  @media only screen and (min-width: #{($gameCardWidth * $i) + ($gridGap * ($i - 1))})
+    .wrapper
+      .content
+        width: calc(($gameCardWidth * $i) + ($gridGap * ($i - 1)))
